@@ -42,7 +42,7 @@ mongoose.connect(dbConfig.url, {
 
 // define a simple route
 app.get('/', (req, res) => {
-    res.json({"message": ""});
+    res.json({"message": "Time tracking api's"});
 });
 
 require('./app/routes/user.routes.js')(app);
